@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below, and state its test-set-exposure and data-rights caveats (see README)."
+title: "Telangana Crop Intelligence: Historical Yield Baselines"
+type: software
+version: 0.1.0
+authors:
+  - alias: "Yafai01"
+repository-code: "https://github.com/Yafai01/telangana-crop-intelligence"
+abstract: >-
+  Transparent, reproducible historical baselines (B0-B4) for district-level crop
+  yield in Telangana, evaluated with fixed-origin and rolling-origin time-based
+  protocols on 12 crop-season combinations. A benchmark, not a production forecast.
+keywords:
+  - crop yield
+  - Telangana
+  - forecasting baselines
+  - time-series evaluation
+  - reproducibility

@@ -1,0 +1,174 @@
+{
+  "columns": [
+    "State_Name",
+    "District_Name",
+    "Crop_Year",
+    "Season",
+    "Crop",
+    "Area",
+    "Production"
+  ],
+  "core_exclusions_by_reason": {
+    "area_below_minimum": 2,
+    "area_missing": 0,
+    "district_excluded": 8,
+    "production_missing": 2,
+    "production_negative": 0,
+    "production_zero": 0
+  },
+  "core_rows_excluded": 12,
+  "coverage_checks": 216,
+  "coverage_failures": 0,
+  "dataset_rows": 246091,
+  "dataset_sha256": "af4d84ed95ca0cf4ae823a332189ae79fd773531e1effc44163fe2e6b4ddbedd",
+  "dataset_sha256_matches_config": true,
+  "duplicate_key_rows_all": 0,
+  "duplicate_key_rows_core_scope": 0,
+  "eligible_by_crop_season": [
+    {
+      "crop_season_id": "kharif_rice",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 117,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "kharif_maize",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 117,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "kharif_cotton_lint",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 117,
+      "unit": "bales/ha"
+    },
+    {
+      "crop_season_id": "kharif_arhar_tur",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 108,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "kharif_jowar",
+      "districts": 9,
+      "test_rows": 33,
+      "train_rows_le_2009": 112,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "kharif_moong",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 116,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "kharif_dry_chillies",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 107,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "rabi_rice",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 117,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "rabi_maize",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 117,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "rabi_jowar",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 115,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "rabi_groundnut",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 117,
+      "unit": "t/ha"
+    },
+    {
+      "crop_season_id": "rabi_gram",
+      "districts": 9,
+      "test_rows": 36,
+      "train_rows_le_2009": 113,
+      "unit": "t/ha"
+    }
+  ],
+  "eligible_panel_rows": 1802,
+  "expected_absent_years": [
+    2012
+  ],
+  "expected_absent_years_confirmed": true,
+  "experiment_id": "tg_baselines_v1",
+  "raw_state_labels": [
+    "'Telangana '"
+  ],
+  "scope_counts": {
+    "dataset_rows": 246091,
+    "rows_other_states": 240442,
+    "rows_target_state": 5649,
+    "target_state_rows_core_crop_season": 1814,
+    "target_state_rows_excluded_crop": 77,
+    "target_state_rows_excluded_season": 1084,
+    "target_state_rows_non_core_crop_season": 2674
+  },
+  "target_state_districts": [
+    "ADILABAD",
+    "HYDERABAD",
+    "KARIMNAGAR",
+    "KHAMMAM",
+    "MAHBUBNAGAR",
+    "MEDAK",
+    "NALGONDA",
+    "NIZAMABAD",
+    "RANGAREDDI",
+    "WARANGAL"
+  ],
+  "target_state_years_present": [
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2013,
+    2014
+  ],
+  "whole_year_overlaps": [
+    "ADILABAD|Castor seed|2013|Kharif+Rabi+Whole Year",
+    "KARIMNAGAR|Castor seed|2013|Kharif+Whole Year",
+    "MAHBUBNAGAR|Castor seed|2013|Kharif+Rabi+Whole Year",
+    "MEDAK|Castor seed|2013|Kharif+Rabi+Whole Year",
+    "NALGONDA|Castor seed|2013|Kharif+Whole Year",
+    "NIZAMABAD|Castor seed|2013|Kharif+Whole Year",
+    "RANGAREDDI|Castor seed|2013|Kharif+Whole Year",
+    "WARANGAL|Castor seed|2013|Kharif+Whole Year"
+  ],
+  "year_max_all": 2015,
+  "year_min_all": 1997
+}

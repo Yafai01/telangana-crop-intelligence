@@ -1,0 +1,11 @@
+design,baseline,n_evaluations,median_wape,n_wape_undefined,median_skill_vs_b1,n_beats_b1,n_worse_than_b1,n_equal_to_b1,n_skill_undefined,n_fallback_predictions,n_negative_predictions
+fixed_origin,B0,12,0.279235,0,-0.206580,2,10,0,0,0,0
+fixed_origin,B1,12,0.258374,0,0.000000,0,0,12,0,0,0
+fixed_origin,B2,12,0.226265,0,0.149683,9,3,0,0,2,0
+fixed_origin,B3,12,0.282839,0,-0.098038,4,8,0,0,2,0
+fixed_origin,B4,12,0.273569,0,-0.209705,5,7,0,0,0,0
+rolling_origin,B0,12,0.274438,0,-0.250336,2,10,0,0,0,0
+rolling_origin,B1,12,0.255375,0,0.000000,0,0,12,0,0,0
+rolling_origin,B2,12,0.251714,0,0.030886,7,5,0,0,2,0
+rolling_origin,B3,12,0.313043,0,-0.394417,4,8,0,0,1,0
+rolling_origin,B4,12,0.250670,0,0.010920,6,6,0,0,0,0

@@ -1,0 +1,13 @@
+crop_season_id,n_districts_2009,median_ratio_2009_to_1997_2008_district_mean
+kharif_rice,9,1.061993
+kharif_maize,9,0.677710
+kharif_cotton_lint,9,1.106546
+kharif_arhar_tur,9,0.968577
+kharif_jowar,8,0.911123
+kharif_moong,8,0.254928
+kharif_dry_chillies,9,1.359856
+rabi_rice,9,1.084670
+rabi_maize,9,1.081146
+rabi_jowar,9,1.127347
+rabi_groundnut,9,1.152875
+rabi_gram,9,1.444697

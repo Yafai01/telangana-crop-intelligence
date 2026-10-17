@@ -1,0 +1,13 @@
+crop_season_id,unit,baseline,rmse,skill_vs_b1
+kharif_rice,t/ha,B2,0.310080,0.644117
+kharif_maize,t/ha,B2,1.017522,0.041561
+kharif_cotton_lint,bales/ha,B1,0.622309,0.000000
+kharif_arhar_tur,t/ha,B0,0.198199,0.013248
+kharif_jowar,t/ha,B0,0.376056,0.029123
+kharif_moong,t/ha,B4,0.194991,0.094227
+kharif_dry_chillies,t/ha,B2,0.586101,0.126612
+rabi_rice,t/ha,B2,0.329518,0.604060
+rabi_maize,t/ha,B2,0.704615,0.523194
+rabi_jowar,t/ha,B1,0.306414,0.000000
+rabi_groundnut,t/ha,B2,0.348661,0.218575
+rabi_gram,t/ha,B2,0.403564,0.020212

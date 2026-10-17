@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="608" height="516" viewBox="0 0 608 516" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Skill relative to B1 - Rolling origin (secondary)</title><desc id="d">Kharif · Rice: B0 -0.34, B2 +0.64, B3 +0.32, B4 +0.46; Kharif · Maize: B0 -0.60, B2 +0.04, B3 -0.86, B4 +0.04; Kharif · Cotton(lint): B0 -0.17, B2 -0.18, B3 -0.80, B4 -0.13; Kharif · Arhar/Tur: B0 +0.01, B2 -0.14, B3 -0.04, B4 -0.35; Kharif · Jowar: B0 +0.03, B2 -0.15, B3 -0.75, B4 -0.19; Kharif · Moong(Green Gram): B0 -0.13, B2 -0.07, B3 -0.47, B4 +0.09; Kharif · Dry chillies: B0 -1.68, B2 +0.13, B3 -0.32, B4 -0.13; Rabi · Rice: B0 -0.33, B2 +0.60, B3 +0.18, B4 +0.57; Rabi · Maize: B0 -0.37, B2 +0.52, B3 +0.31, B4 +0.52; Rabi · Jowar: B0 -0.33, B2 -0.27, B3 -0.68, B4 -0.02; Rabi · Groundnut: B0 -0.12, B2 +0.22, B3 +0.17, B4 +0.19; Rabi · Gram: B0 -0.07, B2 +0.02, B3 -0.76, B4 -0.80</desc>
+<rect x="0.5" y="0.5" width="607" height="515" rx="8" fill="#fcfcfb" stroke="#e1e0d9"/>
+<text x="24.0" y="32.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600">Skill relative to B1 — rolling origin (secondary)</text>
+<text x="24.0" y="52.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400">1 − MSE / MSE(B1) per crop-season. Positive (blue) = better than B1.</text>
+<text x="256.0" y="102.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="600">B0</text>
+<text x="348.0" y="102.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="600">B2</text>
+<text x="440.0" y="102.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="600">B3</text>
+<text x="532.0" y="102.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="600">B4</text>
+<text x="200.0" y="129.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Kharif · Rice</text>
+<rect x="211" y="113" width="90" height="24" rx="3" fill="#ecb6b4"><title>Kharif · Rice - B0: skill -0.344</title></rect>
+<text x="256.0" y="129.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.34</text>
+<rect x="303" y="113" width="90" height="24" rx="3" fill="#70a2de"><title>Kharif · Rice - B2: skill +0.644</title></rect>
+<text x="348.0" y="129.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.64</text>
+<rect x="395" y="113" width="90" height="24" rx="3" fill="#b1c9e5"><title>Kharif · Rice - B3: skill +0.316</title></rect>
+<text x="440.0" y="129.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.32</text>
+<rect x="487" y="113" width="90" height="24" rx="3" fill="#95b8e2"><title>Kharif · Rice - B4: skill +0.460</title></rect>
+<text x="532.0" y="129.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.46</text>
+<text x="200.0" y="155.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Kharif · Maize</text>
+<rect x="211" y="139" width="90" height="24" rx="3" fill="#e88c8a"><title>Kharif · Maize - B0: skill -0.599</title></rect>
+<text x="256.0" y="155.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.60</text>
+<rect x="303" y="139" width="90" height="24" rx="3" fill="#e8eaeb"><title>Kharif · Maize - B2: skill +0.042</title></rect>
+<text x="348.0" y="155.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.04</text>
+<rect x="395" y="139" width="90" height="24" rx="3" fill="#e5605f"><title>Kharif · Maize - B3: skill -0.859</title></rect>
+<text x="440.0" y="155.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.86</text>
+<rect x="487" y="139" width="90" height="24" rx="3" fill="#e8eaeb"><title>Kharif · Maize - B4: skill +0.038</title></rect>
+<text x="532.0" y="155.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.04</text>
+<text x="200.0" y="181.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Kharif · Cotton(lint)</text>
+<rect x="211" y="165" width="90" height="24" rx="3" fill="#eed2cf"><title>Kharif · Cotton(lint) - B0: skill -0.175</title></rect>
+<text x="256.0" y="181.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.17</text>
+<rect x="303" y="165" width="90" height="24" rx="3" fill="#eed1ce"><title>Kharif · Cotton(lint) - B2: skill -0.182</title></rect>
+<text x="348.0" y="181.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.18</text>
+<rect x="395" y="165" width="90" height="24" rx="3" fill="#e66a69"><title>Kharif · Cotton(lint) - B3: skill -0.801</title></rect>
+<text x="440.0" y="181.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.80</text>
+<rect x="487" y="165" width="90" height="24" rx="3" fill="#eedad7"><title>Kharif · Cotton(lint) - B4: skill -0.127</title></rect>
+<text x="532.0" y="181.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.13</text>
+<text x="200.0" y="207.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Kharif · Arhar/Tur</text>
+<rect x="211" y="191" width="90" height="24" rx="3" fill="#ededec"><title>Kharif · Arhar/Tur - B0: skill +0.013</title></rect>
+<text x="256.0" y="207.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.01</text>
+<rect x="303" y="191" width="90" height="24" rx="3" fill="#eed7d5"><title>Kharif · Arhar/Tur - B2: skill -0.143</title></rect>
+<text x="348.0" y="207.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.14</text>
+<rect x="395" y="191" width="90" height="24" rx="3" fill="#efe8e5"><title>Kharif · Arhar/Tur - B3: skill -0.041</title></rect>
+<text x="440.0" y="207.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.04</text>
+<rect x="487" y="191" width="90" height="24" rx="3" fill="#ecb6b3"><title>Kharif · Arhar/Tur - B4: skill -0.345</title></rect>
+<text x="532.0" y="207.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.35</text>
+<text x="200.0" y="233.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Kharif · Jowar</text>
+<rect x="211" y="217" width="90" height="24" rx="3" fill="#eaeceb"><title>Kharif · Jowar - B0: skill +0.029</title></rect>
+<text x="256.0" y="233.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.03</text>
+<rect x="303" y="217" width="90" height="24" rx="3" fill="#eed7d4"><title>Kharif · Jowar - B2: skill -0.146</title></rect>
+<text x="348.0" y="233.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.15</text>
+<rect x="395" y="217" width="90" height="24" rx="3" fill="#e67271"><title>Kharif · Jowar - B3: skill -0.752</title></rect>
+<text x="440.0" y="233.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.75</text>
+<rect x="487" y="217" width="90" height="24" rx="3" fill="#eed0cd"><title>Kharif · Jowar - B4: skill -0.189</title></rect>
+<text x="532.0" y="233.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.19</text>
+<text x="200.0" y="259.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Kharif · Moong(Green Gram)</text>
+<rect x="211" y="243" width="90" height="24" rx="3" fill="#eedad7"><title>Kharif · Moong(Green Gram) - B0: skill -0.127</title></rect>
+<text x="256.0" y="259.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.13</text>
+<rect x="303" y="243" width="90" height="24" rx="3" fill="#efe4e1"><title>Kharif · Moong(Green Gram) - B2: skill -0.067</title></rect>
+<text x="348.0" y="259.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.07</text>
+<rect x="395" y="243" width="90" height="24" rx="3" fill="#eaa2a0"><title>Kharif · Moong(Green Gram) - B3: skill -0.466</title></rect>
+<text x="440.0" y="259.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.47</text>
+<rect x="487" y="243" width="90" height="24" rx="3" fill="#dde4ea"><title>Kharif · Moong(Green Gram) - B4: skill +0.094</title></rect>
+<text x="532.0" y="259.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.09</text>
+<text x="200.0" y="285.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Kharif · Dry chillies</text>
+<rect x="211" y="269" width="90" height="24" rx="3" fill="#e34948"><title>Kharif · Dry chillies - B0: skill -1.680</title></rect>
+<text x="256.0" y="285.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-1.68</text>
+<rect x="303" y="269" width="90" height="24" rx="3" fill="#d7e0e9"><title>Kharif · Dry chillies - B2: skill +0.127</title></rect>
+<text x="348.0" y="285.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.13</text>
+<rect x="395" y="269" width="90" height="24" rx="3" fill="#ecb9b7"><title>Kharif · Dry chillies - B3: skill -0.323</title></rect>
+<text x="440.0" y="285.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.32</text>
+<rect x="487" y="269" width="90" height="24" rx="3" fill="#eedad7"><title>Kharif · Dry chillies - B4: skill -0.128</title></rect>
+<text x="532.0" y="285.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.13</text>
+<text x="200.0" y="311.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Rabi · Rice</text>
+<rect x="211" y="295" width="90" height="24" rx="3" fill="#ecb8b6"><title>Rabi · Rice - B0: skill -0.331</title></rect>
+<text x="256.0" y="311.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.33</text>
+<rect x="303" y="295" width="90" height="24" rx="3" fill="#78a7df"><title>Rabi · Rice - B2: skill +0.604</title></rect>
+<text x="348.0" y="311.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.60</text>
+<rect x="395" y="295" width="90" height="24" rx="3" fill="#ccd9e8"><title>Rabi · Rice - B3: skill +0.183</title></rect>
+<text x="440.0" y="311.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.18</text>
+<rect x="487" y="295" width="90" height="24" rx="3" fill="#7eabdf"><title>Rabi · Rice - B4: skill +0.574</title></rect>
+<text x="532.0" y="311.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.57</text>
+<text x="200.0" y="337.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Rabi · Maize</text>
+<rect x="211" y="321" width="90" height="24" rx="3" fill="#ebb1af"><title>Rabi · Maize - B0: skill -0.372</title></rect>
+<text x="256.0" y="337.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.37</text>
+<rect x="303" y="321" width="90" height="24" rx="3" fill="#88b1e0"><title>Rabi · Maize - B2: skill +0.523</title></rect>
+<text x="348.0" y="337.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.52</text>
+<rect x="395" y="321" width="90" height="24" rx="3" fill="#b2cae5"><title>Rabi · Maize - B3: skill +0.314</title></rect>
+<text x="440.0" y="337.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.31</text>
+<rect x="487" y="321" width="90" height="24" rx="3" fill="#88b1e0"><title>Rabi · Maize - B4: skill +0.523</title></rect>
+<text x="532.0" y="337.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.52</text>
+<text x="200.0" y="363.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Rabi · Jowar</text>
+<rect x="211" y="347" width="90" height="24" rx="3" fill="#ecb9b7"><title>Rabi · Jowar - B0: skill -0.326</title></rect>
+<text x="256.0" y="363.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.33</text>
+<rect x="303" y="347" width="90" height="24" rx="3" fill="#ecc2bf"><title>Rabi · Jowar - B2: skill -0.274</title></rect>
+<text x="348.0" y="363.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.27</text>
+<rect x="395" y="347" width="90" height="24" rx="3" fill="#e77d7c"><title>Rabi · Jowar - B3: skill -0.684</title></rect>
+<text x="440.0" y="363.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.68</text>
+<rect x="487" y="347" width="90" height="24" rx="3" fill="#f0ece9"><title>Rabi · Jowar - B4: skill -0.016</title></rect>
+<text x="532.0" y="363.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.02</text>
+<text x="200.0" y="389.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Rabi · Groundnut</text>
+<rect x="211" y="373" width="90" height="24" rx="3" fill="#eedad8"><title>Rabi · Groundnut - B0: skill -0.124</title></rect>
+<text x="256.0" y="389.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.12</text>
+<rect x="303" y="373" width="90" height="24" rx="3" fill="#c5d5e7"><title>Rabi · Groundnut - B2: skill +0.219</title></rect>
+<text x="348.0" y="389.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.22</text>
+<rect x="395" y="373" width="90" height="24" rx="3" fill="#cddae8"><title>Rabi · Groundnut - B3: skill +0.175</title></rect>
+<text x="440.0" y="389.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.17</text>
+<rect x="487" y="373" width="90" height="24" rx="3" fill="#c9d8e8"><title>Rabi · Groundnut - B4: skill +0.195</title></rect>
+<text x="532.0" y="389.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.19</text>
+<text x="200.0" y="415.0" font-size="12" fill="#52514e" text-anchor="end" font-weight="400">Rabi · Gram</text>
+<rect x="211" y="399" width="90" height="24" rx="3" fill="#efe4e1"><title>Rabi · Gram - B0: skill -0.066</title></rect>
+<text x="256.0" y="415.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.07</text>
+<rect x="303" y="399" width="90" height="24" rx="3" fill="#ecedec"><title>Rabi · Gram - B2: skill +0.020</title></rect>
+<text x="348.0" y="415.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">+0.02</text>
+<rect x="395" y="399" width="90" height="24" rx="3" fill="#e6716f"><title>Rabi · Gram - B3: skill -0.761</title></rect>
+<text x="440.0" y="415.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.76</text>
+<rect x="487" y="399" width="90" height="24" rx="3" fill="#e66968"><title>Rabi · Gram - B4: skill -0.804</title></rect>
+<text x="532.0" y="415.0" font-size="11" fill="#0b0b0b" text-anchor="middle" font-weight="400">-0.80</text>
+<defs><linearGradient id="div" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#e34948"/><stop offset="0.5" stop-color="#f0efec"/><stop offset="1" stop-color="#2a78d6"/></linearGradient></defs>
+<rect x="210" y="450" width="368" height="10" rx="3" fill="url(#div)"/>
+<text x="210.0" y="476.0" font-size="11" fill="#898781" text-anchor="start" font-weight="400">−1 or worse</text>
+<text x="394.0" y="476.0" font-size="11" fill="#898781" text-anchor="middle" font-weight="400">0 = same as B1</text>
+<text x="578.0" y="476.0" font-size="11" fill="#898781" text-anchor="end" font-weight="400">+1</text>
+<text x="24.0" y="498.0" font-size="11" fill="#898781" text-anchor="start" font-weight="400">Colour is clipped at ±1; the printed value is exact. B1 (skill 0) is the reference.</text>
+</svg>

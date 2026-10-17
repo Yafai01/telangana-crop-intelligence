@@ -1,0 +1,7 @@
+# Keep LF line endings on every platform so that the SHA-256 hashes recorded in
+# results/tg_baselines_v1/run_manifest.json stay valid after checkout (including Windows with core.autocrlf).
+* text=auto eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.svg text eol=lf

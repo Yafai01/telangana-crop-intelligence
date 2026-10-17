@@ -1,0 +1,33 @@
+# --- Restricted data: never commit ------------------------------------------
+# The source dataset is not redistributable from here (see data/README.md).
+data/raw/*
+!data/raw/.gitkeep
+
+# Local experiment output. Contains record-level predictions derived from that
+# dataset, plus machine-specific paths in run_timing.json / run_manifest.json.
+runs/
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Environment & secrets --------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+
+# --- OS / editor ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

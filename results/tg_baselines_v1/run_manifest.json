@@ -1,0 +1,52 @@
+{
+  "assertions_passed": [
+    "dataset_sha256_matches_config",
+    "schema_and_row_count",
+    "no_duplicate_keys_in_core_scope",
+    "all_core_crop_seasons_found_by_exact_label",
+    "panel_districts_match_config",
+    "expected_absent_years_absent",
+    "no_rows_between_cutoff_and_origin",
+    "coverage_rules_pass",
+    "info_set_max_year_le_cutoff",
+    "cutoff_lt_target",
+    "target_rows_not_in_info_set",
+    "b3_source_within_permitted_history",
+    "same_target_rows_both_designs",
+    "five_baselines_per_target_row",
+    "b1_reference_rows_match"
+  ],
+  "config_path": "configs/tg_baselines_v1.json",
+  "config_sha256": "970502940b61c71ae7f2328ca74addd7b8c790aa05401e977ab8bdff4dea3faf",
+  "dataset_path": "data/raw/india_crop_production_district.csv",
+  "dataset_rows": 246091,
+  "dataset_sha256": "af4d84ed95ca0cf4ae823a332189ae79fd773531e1effc44163fe2e6b4ddbedd",
+  "designs": {
+    "fixed_origin": "primary",
+    "rolling_origin": "secondary"
+  },
+  "experiment_id": "tg_baselines_v1",
+  "n_predictions": 4290,
+  "n_target_rows_per_design": 429,
+  "nondeterministic_files": [
+    "run_timing.json"
+  ],
+  "numpy_version": "2.2.6",
+  "output_files_sha256": {
+    "baseline_summary.csv": "9f21d60cadad1d92577b264550c92dd06b1aec0072a15be05616ffa168b47fa8",
+    "coverage.csv": "fcb2550a50413d102bc4f8044594fd400465c1b7be7c3534719e1c91e9c34626",
+    "data_audit.json": "5900190e2b92c1f6e3dd7a5caa48c5a7c221844eb782c2042ba15f2abf274cc4",
+    "data_quality_report.md": "bd7f82ee877e897de107787348a68ad62ff358622d674be902409be9ebc2c4fd",
+    "exclusions.csv": "e163ee0514bdf5f5bf5ea95f22a0606fac3458541cac0a203f446800343054f1",
+    "metrics_by_crop_season.csv": "0541cae5110341187f4e3a72ce605d0e6570aa99022ca398529eb3dd62d7fce5",
+    "metrics_by_crop_season_year.csv": "d54dfbece80788e39e7d4c4d4273ec7b64a173c5827ca3e805eefb7cf13dcc61",
+    "outlier_flags.csv": "a0dd56bffe4da3a1ecdfedd5fa3e99ca87711adf16e7ce49500193376a54cacd",
+    "predictions.csv": "9431132e7bc717718323e7d421cf28e1704e78e0e1d57dbfbe6dfcfbdb1503af"
+  },
+  "pandas_version": "2.3.3",
+  "python_version": "3.11.0",
+  "source_files_sha256": {
+    "compare_runs.py": "d7a8ca36f84dac7c11c14798ec08980fe7fa36fe05c17b61d0d137bb04576373",
+    "tg_baselines.py": "0b102c36350a03ea45e80363dfc360696f586e6126539d5e9e1d145f20eebf6a"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "excluded_nondeterministic_files": [
+    "run_timing.json"
+  ],
+  "expected_files": [
+    "baseline_summary.csv",
+    "coverage.csv",
+    "data_audit.json",
+    "data_quality_report.md",
+    "exclusions.csv",
+    "metrics_by_crop_season.csv",
+    "metrics_by_crop_season_year.csv",
+    "outlier_flags.csv",
+    "predictions.csv",
+    "run_manifest.json",
+    "run_timing.json"
+  ],
+  "file_set_a_equals_expected": true,
+  "file_set_b_equals_expected": true,
+  "files": [
+    {
+      "bytes": 712,
+      "file": "baseline_summary.csv",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "9f21d60cadad1d92577b264550c92dd06b1aec0072a15be05616ffa168b47fa8",
+      "sha256_b": "9f21d60cadad1d92577b264550c92dd06b1aec0072a15be05616ffa168b47fa8",
+      "status": "MATCH"
+    },
+    {
+      "bytes": 15423,
+      "file": "coverage.csv",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "fcb2550a50413d102bc4f8044594fd400465c1b7be7c3534719e1c91e9c34626",
+      "sha256_b": "fcb2550a50413d102bc4f8044594fd400465c1b7be7c3534719e1c91e9c34626",
+      "status": "MATCH"
+    },
+    {
+      "bytes": 3934,
+      "file": "data_audit.json",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "5900190e2b92c1f6e3dd7a5caa48c5a7c221844eb782c2042ba15f2abf274cc4",
+      "sha256_b": "5900190e2b92c1f6e3dd7a5caa48c5a7c221844eb782c2042ba15f2abf274cc4",
+      "status": "MATCH"
+    },
+    {
+      "bytes": 4987,
+      "file": "data_quality_report.md",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "bd7f82ee877e897de107787348a68ad62ff358622d674be902409be9ebc2c4fd",
+      "sha256_b": "bd7f82ee877e897de107787348a68ad62ff358622d674be902409be9ebc2c4fd",
+      "status": "MATCH"
+    },
+    {
+      "bytes": 1490,
+      "file": "exclusions.csv",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "e163ee0514bdf5f5bf5ea95f22a0606fac3458541cac0a203f446800343054f1",
+      "sha256_b": "e163ee0514bdf5f5bf5ea95f22a0606fac3458541cac0a203f446800343054f1",
+      "status": "MATCH"
+    },
+    {
+      "bytes": 19760,
+      "file": "metrics_by_crop_season.csv",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "0541cae5110341187f4e3a72ce605d0e6570aa99022ca398529eb3dd62d7fce5",
+      "sha256_b": "0541cae5110341187f4e3a72ce605d0e6570aa99022ca398529eb3dd62d7fce5",
+      "status": "MATCH"
+    },
+    {
+      "bytes": 67336,
+      "file": "metrics_by_crop_season_year.csv",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "d54dfbece80788e39e7d4c4d4273ec7b64a173c5827ca3e805eefb7cf13dcc61",
+      "sha256_b": "d54dfbece80788e39e7d4c4d4273ec7b64a173c5827ca3e805eefb7cf13dcc61",
+      "status": "MATCH"
+    },
+    {
+      "bytes": 269,
+      "file": "outlier_flags.csv",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "a0dd56bffe4da3a1ecdfedd5fa3e99ca87711adf16e7ce49500193376a54cacd",
+      "sha256_b": "a0dd56bffe4da3a1ecdfedd5fa3e99ca87711adf16e7ce49500193376a54cacd",
+      "status": "MATCH"
+    },
+    {
+      "bytes": 947891,
+      "file": "predictions.csv",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "9431132e7bc717718323e7d421cf28e1704e78e0e1d57dbfbe6dfcfbdb1503af",
+      "sha256_b": "9431132e7bc717718323e7d421cf28e1704e78e0e1d57dbfbe6dfcfbdb1503af",
+      "status": "MATCH"
+    },
+    {
+      "bytes": 2309,
+      "file": "run_manifest.json",
+      "in_run_a": true,
+      "in_run_b": true,
+      "sha256_a": "2c00ba7fa0d81a4825e2202474291b7f25f41053c374ec3deafbfc0a797c8aaa",
+      "sha256_b": "2c00ba7fa0d81a4825e2202474291b7f25f41053c374ec3deafbfc0a797c8aaa",
+      "status": "MATCH"
+    },
+    {
+      "file": "run_timing.json",
+      "in_run_a": true,
+      "in_run_b": true,
+      "status": "EXCLUDED_NONDETERMINISTIC"
+    }
+  ],
+  "n_compared": 10,
+  "n_match": 10,
+  "n_mismatch": 0,
+  "n_missing": 0,
+  "reproducible": true,
+  "run_a": "runs/verify_a",
+  "run_b": "runs/verify_b",
+  "unexpected_in_a": [],
+  "unexpected_in_b": []
+}

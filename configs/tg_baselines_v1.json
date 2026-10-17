@@ -1,0 +1,302 @@
+{
+  "experiment_id": "tg_baselines_v1",
+  "description": "Telangana district-level crop-yield forecasting with transparent historical baselines (B0-B4). Fixed-origin evaluation is primary; rolling-origin evaluation is secondary.",
+  "random_seed": null,
+  "random_seed_note": "No step uses randomness; all calculations are deterministic.",
+  "dataset": {
+    "path": "data/raw/india_crop_production_district.csv",
+    "sha256": "af4d84ed95ca0cf4ae823a332189ae79fd773531e1effc44163fe2e6b4ddbedd",
+    "expected_rows": 246091,
+    "expected_columns": [
+      "State_Name",
+      "District_Name",
+      "Crop_Year",
+      "Season",
+      "Crop",
+      "Area",
+      "Production"
+    ],
+    "key_columns": [
+      "State_Name",
+      "District_Name",
+      "Crop_Year",
+      "Season",
+      "Crop"
+    ],
+    "label_normalization": "Leading/trailing whitespace is stripped from State_Name, District_Name, Season and Crop in memory only. Labels are then matched by exact string equality: no case folding, no fuzzy matching, no merging of distinct crop names.",
+    "read_only": true,
+    "path_note": "Relative paths are resolved against the project root (the parent of configs/). Override with --data PATH; the file is always identified by its SHA-256."
+  },
+  "scope": {
+    "state": "Telangana",
+    "expected_panel_districts": [
+      "ADILABAD",
+      "KARIMNAGAR",
+      "KHAMMAM",
+      "MAHBUBNAGAR",
+      "MEDAK",
+      "NALGONDA",
+      "NIZAMABAD",
+      "RANGAREDDI",
+      "WARANGAL"
+    ],
+    "excluded_districts": [
+      "HYDERABAD"
+    ],
+    "excluded_districts_reason": "Insufficient historical coverage (records only 1997-2000).",
+    "excluded_seasons": [
+      "Whole Year"
+    ],
+    "excluded_crops": [
+      "Turmeric",
+      "Soyabean"
+    ],
+    "excluded_crops_reason": "Season labels change between the training and test periods; both crops are outside the 12 core crop-seasons in any case.",
+    "core_crop_seasons": [
+      {
+        "id": "kharif_rice",
+        "season": "Kharif",
+        "crop": "Rice",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source). Whether rice is recorded as paddy or milled rice is not stated."
+      },
+      {
+        "id": "kharif_maize",
+        "season": "Kharif",
+        "crop": "Maize",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source)."
+      },
+      {
+        "id": "kharif_cotton_lint",
+        "season": "Kharif",
+        "crop": "Cotton(lint)",
+        "unit": "bales/ha",
+        "unit_note": "Recorded production units per hectare. Magnitudes are consistent with bales (government statistics convention: 170 kg lint per bale), but the unit is NOT stated in the source and is NOT converted."
+      },
+      {
+        "id": "kharif_arhar_tur",
+        "season": "Kharif",
+        "crop": "Arhar/Tur",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source)."
+      },
+      {
+        "id": "kharif_jowar",
+        "season": "Kharif",
+        "crop": "Jowar",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source)."
+      },
+      {
+        "id": "kharif_moong",
+        "season": "Kharif",
+        "crop": "Moong(Green Gram)",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source)."
+      },
+      {
+        "id": "kharif_dry_chillies",
+        "season": "Kharif",
+        "crop": "Dry chillies",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes of dry chillies (no unit column in source)."
+      },
+      {
+        "id": "rabi_rice",
+        "season": "Rabi",
+        "crop": "Rice",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source). Whether rice is recorded as paddy or milled rice is not stated."
+      },
+      {
+        "id": "rabi_maize",
+        "season": "Rabi",
+        "crop": "Maize",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source)."
+      },
+      {
+        "id": "rabi_jowar",
+        "season": "Rabi",
+        "crop": "Jowar",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source)."
+      },
+      {
+        "id": "rabi_groundnut",
+        "season": "Rabi",
+        "crop": "Groundnut",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source); pod vs kernel basis not stated."
+      },
+      {
+        "id": "rabi_gram",
+        "season": "Rabi",
+        "crop": "Gram",
+        "unit": "t/ha",
+        "unit_note": "Production assumed to be tonnes (no unit column in source)."
+      }
+    ]
+  },
+  "row_exclusions": {
+    "order_of_reasons": [
+      "district_excluded",
+      "production_missing",
+      "production_zero",
+      "production_negative",
+      "area_missing",
+      "area_below_minimum"
+    ],
+    "min_area_ha": 10,
+    "min_area_note": "The 10 ha cutoff is a methodological choice to drop tiny, noisy plots; it is not a proven universal rule."
+  },
+  "target": {
+    "name": "yield",
+    "formula": "Production / Area",
+    "unit": "Recorded production units per hectare (crop-specific; see unit and unit_note)."
+  },
+  "coverage_rules": {
+    "min_train_years_per_district": 10,
+    "min_districts_per_test_year": 7,
+    "min_test_obs_per_evaluation": 30,
+    "train_years_rule_applies_to": "every expected panel district, within each forecast's training information set",
+    "on_failure": "abort_before_scoring"
+  },
+  "expected_absent_years": [
+    2012
+  ],
+  "designs": {
+    "fixed_origin": {
+      "role": "primary",
+      "forecasts": [
+        {
+          "target_year": 2010,
+          "training_cutoff_year": 2009,
+          "forecast_origin_year": 2009
+        },
+        {
+          "target_year": 2011,
+          "training_cutoff_year": 2009,
+          "forecast_origin_year": 2009
+        },
+        {
+          "target_year": 2013,
+          "training_cutoff_year": 2009,
+          "forecast_origin_year": 2009
+        },
+        {
+          "target_year": 2014,
+          "training_cutoff_year": 2009,
+          "forecast_origin_year": 2009
+        }
+      ]
+    },
+    "rolling_origin": {
+      "role": "secondary",
+      "label": "SECONDARY - each target year uses only observations strictly earlier than that year",
+      "forecasts": [
+        {
+          "target_year": 2010,
+          "training_cutoff_year": 2009,
+          "forecast_origin_year": 2009
+        },
+        {
+          "target_year": 2011,
+          "training_cutoff_year": 2010,
+          "forecast_origin_year": 2010
+        },
+        {
+          "target_year": 2013,
+          "training_cutoff_year": 2011,
+          "forecast_origin_year": 2012
+        },
+        {
+          "target_year": 2014,
+          "training_cutoff_year": 2013,
+          "forecast_origin_year": 2013
+        }
+      ],
+      "origin_note": "forecast_origin_year = target_year - 1 (agreed design). For 2013 the origin is 2012, a year with no records; the run asserts that no eligible observation exists between training_cutoff_year and forecast_origin_year, so the information set is identical to 'all years <= 2011'."
+    }
+  },
+  "baselines": {
+    "info_set": "Eligible rows of the same crop-season with Crop_Year <= training_cutoff_year. Target-year rows are never part of the info set.",
+    "B0": {
+      "name": "Crop-season mean",
+      "rule": "Unweighted mean yield of all info-set rows (all panel districts and years)."
+    },
+    "B1": {
+      "name": "District historical mean",
+      "rule": "Mean yield of the district's info-set rows.",
+      "min_years": 5,
+      "fallback": [
+        "B0"
+      ]
+    },
+    "B2": {
+      "name": "Recent five-year district mean",
+      "rule": "Mean yield of the district's info-set rows with forecast_origin_year-4 <= Crop_Year <= forecast_origin_year (five calendar-year labels).",
+      "window_years": 5,
+      "min_obs_in_window": 3,
+      "fallback": [
+        "B1",
+        "B0"
+      ]
+    },
+    "B3": {
+      "name": "Last observed district yield",
+      "rule": "Yield of the district's most recent info-set row with forecast_origin_year-2 <= Crop_Year <= forecast_origin_year.",
+      "lookback_years": 3,
+      "fallback": [
+        "B1",
+        "B0"
+      ]
+    },
+    "B4": {
+      "name": "District mean plus Telangana-wide within-district trend",
+      "rule": "B1 district mean + beta * (target_year - district mean info-set year).",
+      "beta": "Pooled within-district OLS slope of yield on Crop_Year over all info-set rows of the crop-season: beta = sum_d sum_i (t_i - tbar_d)(y_i - ybar_d) / sum_d sum_i (t_i - tbar_d)^2. Centering by district removes persistent district level differences.",
+      "beta_defined_if": "denominator > 0",
+      "fallback": "If the district has fewer than B1.min_years info-set rows and beta is defined: B0 + beta * (target_year - mean info-set year of the crop-season). If beta is undefined: B0 alone.",
+      "clip_negative_predictions": false
+    }
+  },
+  "outlier_flags": {
+    "design": "fixed_origin",
+    "method": "robust_z = (yield - median) / (1.4826 * MAD), median and MAD from the crop-season's fixed-origin training rows only",
+    "threshold_abs": 5,
+    "action": "flag_only (no removal, no capping)"
+  },
+  "metrics": {
+    "error": "e = prediction - observed",
+    "MAE": "mean(|e|)",
+    "RMSE": "sqrt(mean(e^2))",
+    "bias": "mean(e)  (positive = over-prediction)",
+    "WAPE": "sum(|e|) / sum(|observed|); undefined (left blank, with note) if sum(|observed|) == 0",
+    "skill_vs_B1": "1 - MSE_baseline / MSE_B1 on the identical rows; undefined (left blank, with note) if MSE_B1 == 0; B1's own skill is 0 by definition",
+    "beats_B1": "skill_vs_B1 > 0",
+    "aggregation_rule": "Native-unit metrics (MAE, RMSE, bias) are reported per crop-season only. Cross-crop summaries use unit-free WAPE and skill (median, counts) only. No pooled MAE, RMSE or R^2 is computed."
+  },
+  "output": {
+    "float_format": "%.6f",
+    "line_terminator": "LF",
+    "files": [
+      "baseline_summary.csv",
+      "coverage.csv",
+      "data_audit.json",
+      "data_quality_report.md",
+      "exclusions.csv",
+      "metrics_by_crop_season.csv",
+      "metrics_by_crop_season_year.csv",
+      "outlier_flags.csv",
+      "predictions.csv",
+      "run_manifest.json",
+      "run_timing.json"
+    ],
+    "nondeterministic_files": [
+      "run_timing.json"
+    ],
+    "output_dir_rule": "Passed with --out; must not already exist and must not be inside the dataset's directory."
+  }
+}
